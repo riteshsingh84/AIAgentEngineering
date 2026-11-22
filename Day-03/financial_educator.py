@@ -1,7 +1,7 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-from SystemPrompt import Financial_Assistant_System_Prompt_Educator
+from SystemPrompt import Financial_Educator_System_Prompt
 
 # Load configuration
 load_dotenv()
@@ -20,7 +20,7 @@ print("=" * 40)
 messages = [
     {
         "role": "system",
-        "content": Financial_Assistant_System_Prompt_Educator
+        "content": Financial_Educator_System_Prompt
     }
 ]
 
