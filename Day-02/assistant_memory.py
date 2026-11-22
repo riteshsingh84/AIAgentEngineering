@@ -22,7 +22,7 @@ messages = []
 while True:
 
     user_input = input("\nYou : ")
-    
+
     # Save the user's message
     messages.append(
         {
@@ -51,5 +51,13 @@ while True:
             "content": ai_reply
         }
     )
+
+
+    print("\n========== Conversation History ==========")
+
+    for message in messages:
+        print(f"{message['role'].title()} : {message['content']}")
+
+    print("==========================================")
 
     
