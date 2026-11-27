@@ -1,1 +1,3 @@
-Day-01/.env
+.env
+.pyc
+Day-04/__pycache__/
